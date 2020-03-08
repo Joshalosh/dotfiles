@@ -32,13 +32,17 @@ set encoding=utf-8
 
 " Whitespace
 set wrap
-set textwidth=79
+set textwidth=90
 set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set noshiftround
+
+" Add useful tabs and indentsss
+set smarttab
+set smartindent
 
 " Cursor motion
 set scrolloff=3
@@ -90,4 +94,5 @@ set autoindent
 
 " Add colour to the current cursor line
 set cursorline 
-highlight CursorLine cterm=none ctermbg=Grey ctermfg=none
+highlight CursorLine cterm=none ctermbg=DarkGrey ctermfg=none
+
