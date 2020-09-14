@@ -32,7 +32,7 @@ set encoding=utf-8
 
 " Whitespace
 set wrap
-set textwidth=90
+set textwidth=100
 set formatoptions=tcqrn1
 set tabstop=4
 set shiftwidth=4
@@ -96,3 +96,5 @@ set autoindent
 set cursorline 
 highlight CursorLine cterm=none ctermbg=DarkGrey ctermfg=none
 
+" Allow to copy from clipboard
+set clipboardd=unnamed
