@@ -88,6 +88,10 @@ vnoremap <F1> :set invfullscreen<CR>
 map <leader>q gqip
 
 " Color scheme
+colorscheme monokai
+
+" Font
+set guifont=Consolas:h10
 
 " Auto indenting
 set autoindent
@@ -98,3 +102,7 @@ highlight CursorLine cterm=none ctermbg=DarkGrey ctermfg=none
 
 " Allow to copy from clipboard
 set clipboard=unnamed
+
+" Turn off gui menu and toolbar
+set guioptions-=m
+set guioptions-=T
