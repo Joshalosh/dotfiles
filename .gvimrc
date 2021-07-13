@@ -106,3 +106,9 @@ set clipboard=unnamed
 " Turn off gui menu and toolbar
 set guioptions-=m
 set guioptions-=T
+
+" Stop Vim creating undo backup file
+set noundofile
+
+" Stop Vim creating '~' backup file
+set nobackup
