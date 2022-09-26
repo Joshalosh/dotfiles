@@ -45,7 +45,7 @@ set smarttab
 set smartindent
 
 " Cursor motion
-set scrolloff=3
+set scrolloff=8
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
