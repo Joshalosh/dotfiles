@@ -116,3 +116,9 @@ set nobackup
 
 " Set for mouse to register
 set mouse=a
+
+" Forces all horizontal splits to go below the current window
+set splitbelow
+
+" Forces all vertical splits to go to the right of the current window 
+set splitright
