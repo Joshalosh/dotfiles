@@ -1,7 +1,7 @@
 " Don't try to be vi compatible
 set nocompatible
 
-" Helps force plugind to load correctly when it is turned back on below
+" Helps force plugin to load correctly when it is turned back on below
 filetype off
 
 " TODO: Load plugins here (pathogen or vundle)
@@ -88,7 +88,8 @@ vnoremap <F1> :set invfullscreen<CR>
 map <leader>q gqip
 
 " Color scheme
-colorscheme monokai
+set background=dark
+colorscheme gruvbox
 
 " Font
 set guifont=Consolas:h10
@@ -112,3 +113,6 @@ set noundofile
 
 " Stop Vim creating '~' backup file
 set nobackup
+
+" Set for mouse to register
+set mouse=a
