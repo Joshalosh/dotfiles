@@ -45,7 +45,7 @@ set smarttab
 set smartindent
 
 " Cursor motion
-set scrolloff=3
+set scrolloff=8
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
@@ -98,3 +98,18 @@ highlight CursorLine cterm=none ctermbg=DarkGrey ctermfg=none
 
 " Allow to copy from clipboard
 set clipboard=unnamed
+
+" Stop Vim creating undo backup file
+set noundofile
+
+" Stop Vim creating '~' backup file
+set nobackup
+
+" Set for mouse to register
+set mouse=a
+
+" Forces all horizontal splits to go below the current window
+set splitbelow
+
+" Forces all vertical splits to go to the right of the current window 
+set splitright
