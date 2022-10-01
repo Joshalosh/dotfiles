@@ -40,9 +40,10 @@ packer.init({
 -- Install your plugins here
 return packer.startup(function(use)
 	-- My plugins here
-    use "wbthomason/packer.nvim" -- Have packer manage itself.
-    use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim.
-    use "nvim-lua/plenary.nvim"  -- Useful lua function used by lots of plugins.
+    use "wbthomason/packer.nvim"  -- Have packer manage itself.
+    use "nvim-lua/popup.nvim"     -- An implementation of the Popup API from vim in Neovim.
+    use "nvim-lua/plenary.nvim"   -- Useful lua function used by lots of plugins.
+    use "akinsho/toggleterm.nvim" -- A toggle-able terminal floating box
 
     -- Colorschemes
     use "ellisonleao/gruvbox.nvim" -- Original gruvbox for nvim.
