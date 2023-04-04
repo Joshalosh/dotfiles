@@ -16,6 +16,16 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
+--[=====[
+local autocmd = vim.api.nvim_create_autocmd
+autocmd("FileType", {
+   pattern = "lua",
+   callback = function()
+      cmp.setup.buffer { enabled = false }
+   end,
+})
+--]=====]
+
 --   פּ ﯟ   some other good icons
 local kind_icons = {
   Text = "",
@@ -63,7 +73,6 @@ cmp.setup {
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     },
-    
     -- Accept currently selected item. If none selected, `select` first item.
     -- Set `select` to `false` to only confirm explicitly selected items.
     ["<CR>"] = cmp.mapping.confirm { select = true },
