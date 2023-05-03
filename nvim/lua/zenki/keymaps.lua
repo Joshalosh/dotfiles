@@ -38,6 +38,13 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n",  "<S-l>", ":bnext<CR>", opts)
 keymap("n",  "<S-h>", ":bprevious<CR>", opts)
 
+-- RemedyBG keymaps.
+keymap("n", "<F6>", ":call RemedyBGOpenFile()<CR><CR>", term_opts)
+keymap("n", "<F5>", ":call RemedyBGStartDebugging()<CR><CR>", term_opts)
+keymap("n", "<S-F5>", ":call RemedyBGStopDebugging()<CR><CR>", term_opts)
+keymap("n", "<F9>", ":call RemedyBGAddBreakpointAtFile()<CR><CR>", term_opts)
+keymap("n", "<C-F10>", ":call RemedyBGRunToCursor()<CR><CR>", term_opts)
+
 -- Telescope keymaps.
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
@@ -72,7 +79,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- Terminal Mode --
 
 -- Better terminal navigation.
- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
