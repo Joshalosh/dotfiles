@@ -18,7 +18,7 @@ vim.g.maplocalleader = " "
 --   term_mode = "t"
 --   command_mode = "c"
 
--- Normal Mode --
+-- NORMAL MODE --
 
 -- Better window navigation.
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -43,12 +43,12 @@ keymap("n",  "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts) -- The live grep requires 'ripgrep' to be installed on the machine
 
--- Insert Mode --
+-- INSERT MODE --
 
 -- Press jk fast to go back into normal mode.
 keymap("i", "jk", "<ESC>", opts)
 
--- Visual Mode --
+-- VISUAL MODE --
 
 -- Stay in indent mode to keep indenting.
 keymap("v", "<", "<gv", opts)
@@ -61,7 +61,7 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 -- Keep original yanked item in clipboard when pasting over a selected thingy.
 keymap("v", "p", '"_dP', opts)
 
--- Visual Block Mode --
+-- VISUAL BLOCK MODE --
 
 -- Move text block up and down.
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
@@ -76,4 +76,3 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
  keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
  keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
  keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
