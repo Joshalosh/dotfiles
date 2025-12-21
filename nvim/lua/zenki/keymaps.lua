@@ -38,6 +38,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n",  "<S-l>", ":bnext<CR>", opts)
 keymap("n",  "<S-h>", ":bprevious<CR>", opts)
 
+-- Save file and run build script
+keymap("n", "<F7>", ":w<CR>:!build<CR>", opts)
+
 -- RemedyBG keymaps.
 keymap("n", "<F6>", ":call RemedyBGOpenFile()<CR><CR>", term_opts)
 keymap("n", "<F5>", ":call RemedyBGStartDebugging()<CR><CR>", term_opts)
